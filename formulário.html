@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Preencha os Campos</h2>
+
+      <!-- Início do formulário -->
+    <!-- Campo de entrada para o nome -->
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <!-- Campo de entrada para o email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Campo de entrada para a idade -->
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" name="idade" min="18" max="100" required><br><br>
+
+    <!-- Campo de seleção para o gênero -->
+    <label for="genero">Gênero:</label><br>
+    <input type="radio" id="masculino" name="genero" value="masculino" checked>
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <label for="feminino">Feminino</label><br><br>
+
+    <!-- Campos de seleção para os interesses -->
+    <label for="interesses">Interesses:</label><br>
+    <input type="checkbox" id="esporte" name="interesses[]" value="esporte">
+    <label for="esporte">Esporte</label><br>
+    <input type="checkbox" id="musica" name="interesses[]" value="musica">
+    <label for="musica">Música</label><br>
+    <input type="checkbox" id="tecnologia" name="interesses[]" value="tecnologia">
+    <label for="tecnologia">Tecnologia</label><br><br>
+
+    <!-- Campo de seleção para o país -->
+    <label for="pais">País:</label><br>
+    <select id="pais" name="pais" required>
+        <option value="">Selecione seu país</option>
+        <option value="brasil">Brasil</option>
+        <option value="portugal">Portugal</option>
+        <option value="angola">Angola</option>
+        <option value="moçambique">Moçambique</option>
+    </select><br><br>
+
+    <!-- Área de texto para a mensagem -->
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+    <!-- Botão de envio do formulário -->
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
